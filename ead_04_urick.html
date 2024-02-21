@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <title>Senai</title>
+        <style>
+        .textdecoration{
+            text-decoration: none;
+            color: #f1f1f1;
+            font-size: 12px;
+            padding-right: 20px;
+        }
+        .bo{
+           border-radius: 0px;           
+        }
+        .be{
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border: #000 solid 1px;
+        }
+
+        .bd{
+            background-color: #0766b4;
+            color: #fff;
+            border: #0766b4 solid 1px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .backcards{
+            background-image: linear-gradient(to bottom, #fff 0, #fff 35%, #05559f 35%);
+        }
+        .botao{
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #005CA5;
+            color: white;
+            font-size: 16px;
+            border: #005CA5 solid 2px;
+            border-radius: 70px;
+        }
+        .card-text {
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: #fff;
+            color: #044f8b;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .carousel-card img {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .textlinks{
+            text-decoration: none;
+            color: #fff;
+            box-shadow: none;
+
+        }
+        .imagemgarota{
+            color: #fff;
+            width: 100%;
+            height: auto;
+            background-color: #fff;
+            background-image: -webkit-linear-gradient(135deg, #5a4392 40%,  #60b9bc 40%);
+        }
+        .backgroundall{
+            background-color: #005ca9;
+            color: #fff;
+        }
+        hr{
+            color: #fff;
+            margin: 0px 0px 5px;
+            width: 308px;
+            height: 1px;
+            opacity: 100;
+            border: #fff solid 1px;
+        }
+        .botaofooter{
+            background-image: url("assets/img/foot2.svg");
+            background-repeat: no-repeat;
+            height: 60px;
+            width: 60px;
+            cursor: pointer;
+            border-radius: 50%;
+            border: #fff solid 2px;
+            background-color: darkgray;
+        }
+        .botaofooter:hover{
+            background-color: darkgray;
+            border:darkgray solid 4px;
+            height: 65px;
+            width: 65px;
+        }
+        footer {
+            background-color: transparent;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        </style>
+    </head>
+    <body> 
+        <!--Header-->
+        <header style="background-color: #0766b4; padding: 15px;">
+            <div class="row g-0">
+                <div class="col-xxl-4 col-md-4 col-sm-12" style="padding-left: 50px;">
+                    <img src="assets/img/senai-logo.png" alt="Senai" height="50px" width="150px">
+                </div>
+                <div class="col-xxl-8 col-md-8 col-sm-12" style="padding-top: 10px; text-align: center;">
+                    <div class="btn-group">
+                        <button type="button" class="btn dropdown-toggle" style="background-color: #0766b4; color: #f1f1f1; font-size: 12px;" data-bs-toggle="dropdown" aria-expanded="false">
+                            <strong>CURSOS PROFISSIONALIZANTES</strong>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <a class="textdecoration" href=""><strong>APRENDIZAGEM INDUSTRIAL</strong></a>
+                    <div class="btn-group">
+                        <button type="button" class="btn dropdown-toggle" style="background-color: #0766b4; color: #f1f1f1; font-size: 12px;" data-bs-toggle="dropdown" aria-expanded="false">
+                            <strong>INOVAÇÃO E TECNOLOGIA</strong>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn dropdown-toggle" style="background-color: #0766b4; color: #f1f1f1; font-size: 12px;" data-bs-toggle="dropdown" aria-expanded="false">
+                            <strong>PROJETOS SENAI</strong>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>            
+        </header>
+        <!--FimHeader-->
+        <!--Pesquisar-->
+        <section>
+            <div class="container pt-4 px-5 pb-4">
+                <form class="d-flex " role="search">
+                    <input class="form-control be bo fw-lighter fst-italic" type="search" placeholder="Digite o que você procura..." aria-label="Search" >
+                    <button class="bd" type="submit"><b> Buscar </b></button>
+                </form>
+            </div>
+        </section>
+        <!--FimPesquisar-->
+        <!--Carrossel-->
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/carrossel-senai-1.png" class="d-block w-100" alt="..." height="220px">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/carrossel-senai-2.png" class="d-block w-100" alt="..." height="220px">
+              </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </div>
+        <!--FimCarrossel-->
+        <!--Card/Carrossel-->
+        <div class="backcards">
+            <div class="container text-start" style="padding-top: 40px; padding-bottom: 40px;">
+                <h1 style="color: #0766b4;">
+                    Para cada desafio, uma oportunidade do SENAI.
+                </h1>
+                <p>
+                    Capacitamos os futuros destaques da indústria e impulsionamos os negócios de Minas com as principais tecnologias e tendências.
+                </p>
+            </div>
+            <div class="container">
+                <h1 class="text-start" style="color: #0766b4; padding-top: 40px; padding-bottom: 40px;">Conheça nossa atuação:</h1>
+                <div class="row text-center" style="padding-bottom: 40px;">
+                    <div class="col-xxl-4 col-md-4 col-sm-12 d-flex justify-content-center" style="padding-bottom: 40px;">
+                        <div class="card w-100 mx-2" style="background-color: #50b0d8; width: 18rem; border-radius: 20px;">
+                            <div class="d-flex justify-content-center">    
+                                <img src="assets/img/livro.png" class="mt-4" alt="Cad1" height="85%" width="45%">
+                            </div>    
+                            <div class="card-body" style=" margin-top: 15px;">
+                                <h4 class="card-title pb-4 px-3" style="color: #3c60a7;">Educação</h4>
+                                <p style="color: #fff;" class="fw-medium" >Somos referência em formação
+                                    para quem quer começar, evoluir
+                                    ou se especializar na indústria.</p>
+                                <button class="botao fw-bold mx-1" style="padding: 7px; margin-top: 40px;">Saiba mais</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-4 col-sm-12 d-flex justify-content-center" style="padding-bottom: 40px;">
+                        <div class="card w-100 mx-2" style="background-color: #50b0d8; width: 18rem; border-radius: 20px;">
+                            <div class="d-flex justify-content-center">    
+                                <img src="assets/img/setas.png" class="mt-4" alt="Cad1" height="85%" width="45%">
+                            </div>    
+                            <div class="card-body" style=" margin-top: 15px;">
+                                <h4 class="card-title pb-4 px-3" style="color: #3c60a7;">Desenvolvimento Industrial</h4>
+                                <p style="color: #fff;" class="fw-medium" >Promovemos o desenvolvimento sustentável e a competitividade da indústria mineira.</p>
+                                <button class="botao fw-bold mx-1" style="padding: 7px; margin-top: 40px;">Saiba mais</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-4 col-sm-12 d-flex justify-content-center" style="padding-bottom: 40px;">
+                        <div class="card w-100 mx-2" style="background-color: #50b0d8; width: 18rem; border-radius: 20px;">
+                            <div class="d-flex justify-content-center">    
+                                <img src="assets/img/lap.png" class="mt-4" alt="Cad1" height="85%" width="45%">
+                            </div>    
+                            <div class="card-body" style=" margin-top: 15px;">
+                                <h4 class="card-title pb-4 px-3" style="color: #3c60a7;">Tecnologia e inovação</h4>
+                                <p style="color: #fff;" class="fw-medium" >Aceleramos o desenvolvimento tecnológico para evoluir os processos, a gestão e os lucros da sua empresa.</p>
+                                <button class="botao fw-bold mx-1" style="padding: 7px; margin-top: 40px;">Saiba mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="row g-0">
+                    <div class="col-xxl-8 col-md-8 col-sm-12 d-flex justify-content-center">
+                        <div class="d-flex justify-content-center" style="align-items: center;">
+                            <h1 style="color: #f1f1f1; padding-top: 40px; padding-bottom: 40px;">
+                                Soluções para pessoas e negócios.
+                            </h1>
+                        </div> 
+                    </div>
+                    <div class="col-xxl-4 col-md-4 col-sm-12" style="padding: 20px;">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators" style="margin-bottom: 40px;">
+                              <button type="button" style=" width: 10px; height: 10px; border-radius: 50%;" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" style=" width: 10px; height: 10px; border-radius: 50%;" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" style=" width: 10px; height: 10px; border-radius: 50%;" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" style=" width: 10px; height: 10px; border-radius: 50%;" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                              <button type="button" style=" width: 10px; height: 10px; border-radius: 50%;" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                              <button type="button" style=" width: 10px; height: 10px; border-radius: 50%;" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carousel-card">
+                                        <img src="assets/img/cd1.png" class="d-block" alt="...">
+                                    </div>
+                                    <div class="card-text fs-5 fw-bold py-4" style="margin-bottom: 100px;">
+                                        <p>Centro de Treinamento e Desenvolvimento da Indústria 4.0</p>
+                                    </div> 
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-card">
+                                        <img src="assets/img/cd2.png" class="d-block" alt="...">
+                                    </div>
+                                    <div class="card-text fs-5 fw-bold py-4" style="margin-bottom: 100px;">
+                                        <p>Como estudar no SENAI</p>
+                                    </div> 
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-card">
+                                        <img src="assets/img/cd3.png" class="d-block" alt="...">
+                                    </div>
+                                    <div class="card-text fs-5 fw-bold py-4" style="margin-bottom: 100px;">
+                                        <p> Soluções em Energia e Eficiência Energética</p>
+                                    </div>     
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-card">
+                                        <img src="assets/img/cd4.png" class="d-block" alt="...">                                    
+                                    </div>
+                                    <div class="card-text fs-5 fw-bold py-4" style="margin-bottom: 100px;">
+                                        <p>Serviços técnicos Especializados</p>
+                                    </div> 
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-card">
+                                        <img src="assets/img/cd5.png" class="d-block" alt="...">                                    
+                                    </div>
+                                    <div class="card-text fs-5 fw-bold py-4 "style="margin-bottom: 100px;">
+                                        <p> Consultoria em Tecnologia</p>
+                                    </div> 
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-card">
+                                        <img src="assets/img/cd6.png" class="d-block" alt="...">                                     
+                                    </div>
+                                    <div class="card-text fs-5 fw-bold py-4" style="margin-bottom: 100px;">
+                                        <p>Crie sua própria jornada de Desenvolvedor Web no SENAI</p>
+                                    </div> 
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" style="margin-bottom: 142%; border-radius: 50%; background-color: #000;" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                  </button>
+                                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" style="margin-bottom: 142%; border-radius: 50%; background-color: #000;" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Próximo</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FimCard/Carrossel-->
+        <!--Duvidas-->
+        <section class="imagemgarota pt-2">
+            <div class="d-flex">
+                <div class="row g-0">
+                    <div class="col-xxl-8 col-md-8 col-sm-12 d-flex flex-column px-4 mb-3 justify-content-center">
+                        <div class="d-flex column px-4">
+                            <h2 class="fs-5-sm">Se é inovação, tecnologia e capacitação que muda carreiras e empresas, é SENAI.</h2>
+                        </div>
+                        <div class="px-4 d-flex just2">
+                            <button type="button" class="btn btn-primary btn-lg" style="border-radius: 30px; color:#005CA5; background-color: #fff; border:none; "><strong>Com o SENAI, você faz o futuro</strong></button>
+                        </div>    
+                    </div>
+                    <div class="col-xxl-4 col-md-4 col-sm-12 d-flex imgcd">
+                        <img src="assets/img/sect4.png" class="bann" alt="Jovem" style="padding-top:10px ;">
+                    </div>    
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container text-center">
+                <div class="pt-5 ps-2 d-flex justify-content-start">
+                    <h2 class="ms-5 fw-bold" style="color: #3c60a7;">Destaques</h2>
+                </div>
+                <div class="row g-0" id="m">
+                    <div class="col-xxl-6 col-md-6 col-sm-12 d-flex justify-content-center py-2"> 
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/img/cad1-2.jpg" class="my-4 img-fluid bord" alt="Cad2" height="100%" width="100%">
+                        </div>                            
+                    </div>
+                    <div class="col-xxl-6 col-md-6 col-sm-12 d-flex justify-content-center py-2">  
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/img/cad2-2.jpg" class="my-4 img-fluid bord"  alt="Card3" height="100%" width="100%">
+                        </div>
+                    </div> 
+                </div>      
+            </div>
+        </section>
+
+        <section class="pb-5 sectc">
+            <div class="container text-center ">
+                <div class="pt-5 ps-2 d-flex justify-content-start">
+                    <h1 class="ms-5" style="color: #fff;">Notícias</h1>
+                </div>
+                <div class="row g-0" id="m">
+                    <div class="col-xxl-3 col-md-3 col-sm-12 d-flex justify-content-center py-2"> 
+                        <div class="" style="width: 18rem;">
+                            <img src="assets/img/cad1-3.jpeg" class="card-img-top bord" alt="..." width="300px" height="200px">
+                            <div class="d-flex justify-content-start">
+                              <p class="card-title pt-1" style="color:#3c60a7;">06/02/2024</p>
+                            </div>
+                            <div>  
+                            
+                              <p class="cadtext lh-1 fw-bold fs-5">Imersão Indústria 2024: conexão, conhecimento e oportunidades de negócio</p>
+                            </div>
+                        </div>                           
+                    </div>
+                
+                    <div class="col-xxl-3 col-md-3 col-sm-12 d-flex justify-content-center py-2">  
+                        <div class="" style="width: 18rem;">
+                            <img src="assets/img/card2-3.jpg" class="card-img-top bord" alt="..." width="300px" height="200px">
+                            <div class="d-flex justify-content-start">
+                                <p class="card-title pt-1" style="color:#3c60a7;">04/02/2024</p>
+                            </div>
+                            <div>
+                                <p class="cadtext lh-1 fw-bold fs-5">600 estudantes apresentam projetos de robótica em festival.</p>
+                            </div>
+                        </div> 
+                    </div> 
+                    <div class="col-xxl-3 col-md-3 col-sm-12 d-flex justify-content-center py-2">  
+                        <div class="" style="width: 18rem;">
+                            <img src="assets/img/card3-3.jpg" class="card-img-top bord" alt="..." width="300px" height="200px">
+                            <div class="d-flex justify-content-start">
+                                <p class="card-title pt-1" style="color:#3c60a7;">24/01/2024</p>
+                            </div> 
+                            <div>   
+                              <p class="cadtext lh-1 fw-bold fs-5">SENAI abre mais de 5 mil vagas para cursos técnicos em Minas</p>
+                            </div>
+                        </div> 
+                    </div> 
+                    <div class="col-xxl-3 col-md-3 col-sm-12 d-flex justify-content-center py-2">  
+                        <div class="" style="width: 18rem;">
+                            <img src="assets/img/card4-3.jpg" class="card-img-top bord" alt="..." width="300px" height="200px">
+                            <div class="d-flex justify-content-start">
+                                <p class="card-title pt-1" style="color:#3c60a7;">16/02/2024</p>
+                            </div>  
+                            <div>  
+                                <p class="cadtext lh-1 fw-bold fs-5">FIEMG e Gerdau lançam pedra fundamental de unidade integrada do SESI/SENAI em Ouro Branco</p>
+                            </div>
+                        </div> 
+                    </div> 
+                </div> 
+                <div class="d-flex justify-content-center pt-5">
+                    <button type="button" class="btn btn-primary btn-lg" style="border-radius: 30px; color:#fff; background-color: #0766b4; border:none; "><strong>Mais notícias</strong></butto>
+                </div>     
+            </div>
+        </section>
+        <section class="sectc2 pt-4 pb-4 mt-5 ">
+            <Div class="d-flex ">
+                <div class="row g-0">
+                    <div class="col-lg-6 col-sm-12 d-flex justify-content-center">
+                        <img src="assets/img/contato.webp" alt="Contatos" class="imgg" width="90%">
+                    </div>
+                    <div class="text-center col-lg-6 col-sm-12 pt-2 d-flex justify-content-center">
+                        <Div>
+                            <H1 class="fw-bold" style="color:#fff; font-family: sans-serif;">Quer saber mais sobre nossas soluções?</H1>
+                            <p class="fw-medium fs-6" style="color:#fff;">Entre em contato e descubra como podemos apoiar a sua jornada.</p>
+                            <div class="pt-2 pb-3">
+                                <button type="button" class="btn btn-primary btn-lg" style="border-radius: 30px; color:#fff; background-color: #005CA5; border:none; "><strong>Clique aqui</strong></butto>
+                                </div>
+                        </Div>
+                    </div>
+                </div>
+            </Div>    
+        </section>
+        <section class="mb-5 mt-5">
+            <Div class=" w-100">
+                <div class="row g-0 px-5">
+                    <div class="col-lg-6 col-md-6 col-sm-12 center d-flex ps-5">
+                        <div>
+                            <p>Fique por dentro das principais tendências,<br> notícias e oportunidades da FIEMG para impulsionar<br> as pessoas e os negócios de Minas Gerais.</p>
+                        </div>
+                    </div>
+                    <div class="text-center col-lg-6 col-md-6 col-sm-12 pt-5 d-flex justify-content-end">
+                        <Div>
+                            <formS>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label "></label>
+                                    <input type="name" class="form-control bord2 fw-lighter fst-italic" placeholder="Nome*" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label"></label>
+                                    <input type="email" class="form-control bord2 fw-lighter fst-italic" placeholder="E-mail*" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <p>Ao informar meus dados, eu concordo com o <a href="#" class="ass"> Aviso de Privacidade e Proteção de Dados.</a></p>
+                                <div class="pt-2">
+                                    <button type="button" class="btn btn-primary btn-lg" style="border-radius: 30px; color: black; background-color: #fff; border-color: #000;">Quero receber informações</butto>
+                                </div>
+                            </form>
+                        </Div>
+                    </div>
+                </div>
+            </Div>    
+        </section>
+        <section class="backgroundall py-5">
+            <div class="container" style="text-align: left;">
+                <div class="row g-0" id="m">
+                    <div class="col-xxl-3 col-md-6 col-sm-12 d-flex px-4 justify-content-center pt-4 py-2"> 
+                        <div>
+                            <div>
+                                <p style="margin-bottom: 0px;">Serviço de Atendimento ao Cidadão:</p>
+                                <p class="fs-2">4020 9030</p>
+                            </div>
+                            <div>
+                                <p style="margin-bottom: 0px;">Ouvidoria:</p>
+                                <p class="fs-2">0800 882 2525</p>
+                            </div>
+                            <div>
+                                <p style="margin-bottom: 0px;">Geral:</p>
+                                <p class="fs-2">(31) 3263 4200</p>
+                            </div>
+                            <div>
+                                <p style="margin-bottom: 0px;">Horário de funcionamento:<br>
+                                Segunda a sexta-feira das 8h às 17h<br>
+                                Exceto feriados nacionais e locais.</p>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="col-xxl-3 col-md-6 col-sm-12 d-flex justify-content-center pt-4 py-2 te">  
+                        <div>
+                            <div>
+                                <a href="#" class="textlinks fw-medium">&nbsp;Conheça o SENAI</a>
+                                <hr>
+                            </div>
+                            <div>
+                                <a href="#" class="textlinks fw-medium">&nbsp;Fale Conosco</a>
+                                <hr>
+                            </div>
+                            <div>
+                                <a href="#" class="textlinks fw-medium">&nbsp;Intranet</a>
+                                <hr>
+                            </div>    
+                        </div>
+                    </div> 
+                    <div class="col-xxl-3 col-md-6 col-sm-12 d-flex te justify-content-center pt-4 py-2">  
+                        <div>
+                            <div>
+                                <a href="#" class="textlinks fw-medium">&nbsp;Gestão 2022-2025</a>
+                                <hr>
+                            </div>
+                            <div>
+                                <a href="#" class="textlinks fw-medium">&nbsp;Trabalhe Conosco</a>
+                                <hr>
+                            </div>
+                            <div>
+                                <a href="#" class="textlinks fw-medium">&nbsp;Estatuto FIEMG</a>
+                                <hr>
+                            </div>
+                            <div>
+                                <a href="#" class="textlinks fw-medium">&nbsp;Ouvidoria</a>
+                                <hr>
+                            </div>
+                            <div>
+                                <a href="#" class="textlinks fw-medium">&nbsp;Integridade</a>
+                                <hr>
+                            </div>
+                            <div>
+                                <a href="#" class="textlinks fw-medium">&nbsp;Aviso de Privacidade e Proteção de Dados</a>
+                                <hr>
+                            </div>
+                            <div>
+                                <a href="#" class="textlinks fw-medium">&nbsp;Manual de Marcas</a>
+                                <hr>
+                            </div>
+                            <div>
+                                <a href="#" class="textlinks fw-medium">&nbsp;Política de Segurança da Informatica</a>
+                                <hr>
+                            </div>
+                            <div>
+                                <a href="#" class="textlinks fw-medium">&nbsp;Sindicatos Filiados</a>
+                                <hr>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-xxl-3 col-md-6 col-sm-12 te d-flex justify-content-center pt-4 py-2">  
+                        <div>
+                            <div>
+                                <a href="#" class="textlinks fw-medium"> &nbsp;  Calendário da Indústria</a>
+                                <hr>
+                            </div>
+                            <div>
+                                <a href="#" class="textlinks fw-medium"> &nbsp; Pagamento RPA</a>
+                                <hr>
+                            </div>
+                            <div>
+                                <a href="#" class="textlinks fw-medium">&nbsp; Pagamento a Empresas</a>
+                                <hr>
+                            </div>
+                            <div>
+                                <a href="#" class="textlinks fw-medium">&nbsp;Licitações e Compras</a>
+                                <hr>
+                            </div>
+                        </div>
+                    </div> 
+                </div>     
+            </div>
+        </section>
+        <section class="backgroundall">
+            <div class="container text-center ">
+                <div class="row g-0" id="m">
+                    <div class="col-xxl-8 col-md-8 col-sm-12 d-flex justify-content-start dr py-2"> 
+                        <div>
+                            <img src="assets/img/logo.webp" alt="logo" height="100px" width="200px">
+                        </div>           
+                        <div>
+                            <p>Federação das Indústrias do <br>Estado de Minas Gerais
+                                <br>Av. do Contorno, 4456 –<br> Funcionários
+                                Belo Horizonte/MG – CEP: 30110-028</p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-4 col-sm-12 d-flex just py-2">  
+                        <div class="d-flex just">
+                            <div>
+                                <a href="#"><img src="assets/img/icon1.png" class="mx-1" width="20px" height="20px"></a>
+                            </div>
+                            <div>
+                                <a href="#"><img src="assets/img/icon2.png" class="mx-1" width="19px" height="19px"></a>
+                            </div>
+                            <div>
+                                <a href="#"><img src="assets/img/icon3.png" class="mx-1" width="20px" height="20px"></a>
+                            </div>
+                            <div>
+                                <a href="#"><img src="assets/img/icon4.png" class="mx-1" width="20px" height="20px"></a>
+                            </div>
+                            <div>
+                                <a href="#"><img src="assets/img/icon5.png" class="mx-1" width="20px" height="20px"></a>
+                            </div>
+                            <div>
+                                <a href="#"><img src="assets/img/icon6.png" class="mx-1" width="20px" height="20px"></a>
+                            </div>
+                            <div>
+                                <a href="#"><img src="assets/img/icon7.png" class="mx-1" width="20px" height="20px"></a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>     
+            </div>
+        </section>
+        <section class="backgroundall py-5">
+            <div class="d-flex justify-content-center" >
+                <div>
+                    <img src="assets/img/logo-Plan-B.svg" alt="PlanB" width="80px" height="40px">
+                </div>
+            </div>
+        </section>
+        <!--FimDuvidas-->
+        <!--Footer-->
+        <footer class="pb-3 ">
+            <div class="d-flex" style="justify-content: space-between;">
+                <div class="d-flex ps-3" style="align-items: flex-end;">
+                    <img src="assets/img/foot1.png" alt="" width="40px" height="40px">
+                </div>
+                <div class="d-flex pe-3 float-end justify-content-end">
+                    <div>
+                        <button class="botaofooter" ></button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--FimFooter-->
+    </body>
+</html>
